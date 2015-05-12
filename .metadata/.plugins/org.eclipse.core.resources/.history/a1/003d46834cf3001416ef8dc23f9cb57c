@@ -1,0 +1,22 @@
+package main
+
+import (
+    "fmt";
+    "io/ioutil";
+    "log";
+)
+
+func main() {
+	fmt.Println("Reading dir ~abhishek/dev...");
+	
+	file_list, err := ioutil.ReadDir("/home/abhishek/dev");
+	
+	if err == nil {
+		
+	}
+	else {
+		log.Fatal(err);
+	}
+	
+	
+}

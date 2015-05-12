@@ -1,0 +1,67 @@
+package main
+
+import (
+    "fmt"
+    "net/http"
+    "log"
+    "io/ioutil"
+    "strings"
+)
+
+func main() {
+	http.HandleFunc("/", func(w http.ResponseWriter, req *http.Request) {
+			fmt.Println("Received a req ...")
+
+			// Parse req form
+			err := req.ParseForm()
+			if err != nil {
+				log.Fatal(err.Error())
+			}
+			
+			// Method
+			fmt.Printf("Method: %s\n", req.Method)
+			
+			// Referer
+			fmt.Printf("Referer: %s\n", req.Referer());
+			
+			// Sender
+			fmt.Printf("Sender: %s\n", req.RemoteAddr)
+			
+			// Request Path
+			fmt.Printf("Requested URI path: %s\n", req.URL.RequestURI());
+			
+			// Content length
+			fmt.Printf("Content length: %d\n", req.ContentLength)
+			
+			// Header
+			fmt.Printf("Header:\n");
+			for k, v := range req.Header {
+				fmt.Printf("  %s: %s\n", k, v)
+			}
+			
+			// Body
+			body, err := ioutil.ReadAll(req.Body)
+			body_str := strings.Trim(string(body), "\n")
+			if body_str != nil {
+				fmt.Printf("Body: %s\n", body);
+			}
+			
+			// Form data
+			if req.Form != nil {
+			    fmt.Println("Form data: ");
+			    form_data := req.Form
+			    fmt.Printf("  %s\n", form_data);
+			}
+			
+			// Post form data
+			if req.PostForm != nil {
+			    fmt.Println("Post form data: ");
+			    post_form_data := req.PostForm
+			    fmt.Printf("  %s", post_form_data);		
+			}    	
+
+	})
+	
+	fmt.Println("Starting the web server running on 9999 ...")
+	log.Fatal(http.ListenAndServe("localhost:9999", nil))
+}

@@ -1,0 +1,15 @@
+package main
+
+import (
+    "database/sql"
+    _ "github.com/lib/pq"
+)
+
+func main() {
+	db, err := sql.Open("postgres", "user=ec2-user dbname=twilio sslmode=off")
+	if err != nil {
+		log.Fatal(err)
+	}
+	
+}
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.googlecode.goclipse.launch.goLaunchType">
+<stringAttribute key="MAIN_FILE" value="src/main"/>
+<stringAttribute key="PROGRAM_ARGS" value="max 22"/>
+<stringAttribute key="PROJECT_NAME" value="cmdline_args.go"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/cmdline_args.go"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="max" value="10"/>
+</mapAttribute>
+</launchConfiguration>

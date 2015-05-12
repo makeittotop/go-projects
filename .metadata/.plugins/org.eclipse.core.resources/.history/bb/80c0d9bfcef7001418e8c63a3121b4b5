@@ -1,0 +1,34 @@
+package main
+
+import (
+    "database/sql"
+    "log"
+    _ "github.com/lib/pq"
+    "fmt"
+)
+
+func main() {
+	db, err := sql.Open("postgres", "user=ec2-user dbname=twilio sslmode=disable")
+	//db, err := sql.Open("postgres", "postgres://ec2-user:test@localhost:8887/twilio?sslmode=disable")	
+	if err != nil {
+		log.Fatal(err.Error())
+	} else {
+		fmt.Println(db)
+	}
+	
+	rows, err := db.Query("SELECT * FROM sms.test;")
+	if err != nil {
+		log.Fatal(err)
+	} else {
+		cols, err := rows.Columns()
+		if err != nil {
+			log.Fatal(err.Error())
+		} else {
+			for _, col := range cols {
+				fmt.Printf("%s\n", col)
+			}
+		}
+	}
+	
+}
+

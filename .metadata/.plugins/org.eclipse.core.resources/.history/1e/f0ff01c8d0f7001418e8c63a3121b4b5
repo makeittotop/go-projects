@@ -1,0 +1,42 @@
+package main
+
+import (
+    "database/sql"
+    "log"
+    _ "github.com/lib/pq"
+    "fmt"
+)
+
+func main() {
+	//db, err := sql.Open("postgres", "user=ec2-user password=test dbname=twilio sslmode=disable")
+	db, err := sql.Open("postgres", "postgres://ec2-user:test@localhost:8887/twilio?sslmode=disable")
+		
+	if err != nil {
+		log.Fatal(err)
+	} 
+	
+	defer db.Close()
+	
+	rows, err := db.Query("SELECT * FROM sms.test")
+		
+	if err != nil {
+		log.Fatal(err)
+	} 
+	
+	defer rows.Close()
+
+	for rows.Next() {
+		var id int
+		var str string
+		
+		if err := rows.Scan(&id, &str); err != nil {
+			log.Fatal(err)
+		}
+		
+		fmt.Printf("%d is %s\n", id, str)
+		
+	}
+	if err := rows.Err(); err != nil {
+        log.Fatal(err)
+    }
+}
