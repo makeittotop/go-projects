@@ -1680,3 +1680,145 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -1
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-05-14 12:48:30.252
+!MESSAGE Unknown error line syntax: warning: "./..." matched no packages
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-05-14 12:48:38.369
+!MESSAGE Unknown error line syntax: warning: "./..." matched no packages
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-05-14 12:48:45.129
+!MESSAGE Unknown error line syntax: runtime.main_main: main.main: not defined
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-05-14 12:48:45.129
+!MESSAGE Unknown error line syntax: runtime.main_main: undefined: main.main
+!SESSION 2015-05-26 17:02:53.395 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-05-26 17:02:57.173
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.rse.core 4 0 2015-05-26 17:03:13.147
+!MESSAGE Unexpected Exception
+!STACK 0
+java.net.UnknownHostException: bjlinux068: bjlinux068: unknown error
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1484)
+	at org.eclipse.rse.core.RSECorePlugin.getLocalMachineName(RSECorePlugin.java:265)
+	at org.eclipse.rse.core.RSEPreferencesManager.getDefaultPrivateSystemProfileName(RSEPreferencesManager.java:358)
+	at org.eclipse.rse.core.RSEPreferencesManager.initDefaults(RSEPreferencesManager.java:337)
+	at org.eclipse.rse.internal.core.RSEPreferenceInitializer.initializeDefaultPreferences(RSEPreferenceInitializer.java:23)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:303)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.node(DefaultPreferences.java:147)
+	at org.eclipse.core.internal.preferences.legacy.PreferenceForwarder.getDefaultPreferences(PreferenceForwarder.java:131)
+	at org.eclipse.core.internal.preferences.legacy.PreferenceForwarder.getInt(PreferenceForwarder.java:485)
+	at org.eclipse.rse.logging.Logger.initialize(Logger.java:249)
+	at org.eclipse.rse.logging.Logger.<init>(Logger.java:135)
+	at org.eclipse.rse.logging.LoggerFactory.getLogger(LoggerFactory.java:45)
+	at org.eclipse.rse.core.RSECorePlugin.getLogger(RSECorePlugin.java:392)
+	at org.eclipse.rse.internal.core.RSEInitJob.<init>(RSEInitJob.java:133)
+	at org.eclipse.rse.internal.core.RSEInitJob.<clinit>(RSEInitJob.java:65)
+	at org.eclipse.rse.internal.ui.RSEUIStartup.earlyStartup(RSEUIStartup.java:20)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:67)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2755)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.UnknownHostException: bjlinux068: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:907)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1302)
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1479)
+	... 28 more
+!SESSION 2015-06-08 10:31:48.476 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-06-08 10:31:50.404
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.rse.core 4 0 2015-06-08 10:31:58.475
+!MESSAGE Unexpected Exception
+!STACK 0
+java.net.UnknownHostException: bjlinux068: bjlinux068: unknown error
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1484)
+	at org.eclipse.rse.core.RSECorePlugin.getLocalMachineName(RSECorePlugin.java:265)
+	at org.eclipse.rse.core.RSEPreferencesManager.getDefaultPrivateSystemProfileName(RSEPreferencesManager.java:358)
+	at org.eclipse.rse.core.RSEPreferencesManager.initDefaults(RSEPreferencesManager.java:337)
+	at org.eclipse.rse.internal.core.RSEPreferenceInitializer.initializeDefaultPreferences(RSEPreferenceInitializer.java:23)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:303)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.node(DefaultPreferences.java:147)
+	at org.eclipse.core.internal.preferences.legacy.PreferenceForwarder.getDefaultPreferences(PreferenceForwarder.java:131)
+	at org.eclipse.core.internal.preferences.legacy.PreferenceForwarder.getInt(PreferenceForwarder.java:485)
+	at org.eclipse.rse.logging.Logger.initialize(Logger.java:249)
+	at org.eclipse.rse.logging.Logger.<init>(Logger.java:135)
+	at org.eclipse.rse.logging.LoggerFactory.getLogger(LoggerFactory.java:45)
+	at org.eclipse.rse.core.RSECorePlugin.getLogger(RSECorePlugin.java:392)
+	at org.eclipse.rse.internal.core.RSEInitJob.<init>(RSEInitJob.java:133)
+	at org.eclipse.rse.internal.core.RSEInitJob.<clinit>(RSEInitJob.java:65)
+	at org.eclipse.rse.core.RSECorePlugin.waitForInitCompletion(RSECorePlugin.java:142)
+	at org.eclipse.rse.internal.ui.RSEUIInitJob.run(RSEUIInitJob.java:32)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.UnknownHostException: bjlinux068: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:907)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1302)
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1479)
+	... 25 more
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-06-08 10:32:54.713
+!MESSAGE Unknown error line syntax: warning: "./..." matched no packages
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-06-08 10:33:04.147
+!MESSAGE Unknown error line syntax: go install: no install location for directory /home/abhishek/dev/go/workspace/test_concurrency/src outside GOPATH
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-06-08 10:33:20.606
+!MESSAGE Unknown error line syntax: go install: no install location for directory /home/abhishek/dev/go/workspace/test_concurrency/src outside GOPATH
+
+!ENTRY com.googlecode.goclipse.core 1 0 2015-06-08 10:34:42.025
+!MESSAGE starting gocode server [/home/abhishek/dev/go/bin/gocode]
+
+!ENTRY com.googlecode.goclipse.core 4 101 2015-06-08 10:34:50.410
+!MESSAGE Executable file (/home/abhishek/dev/go/workspace/test_concurrency/bin/main) doesnt exist.
+
+!ENTRY com.googlecode.goclipse.core 4 101 2015-06-08 10:35:05.106
+!MESSAGE Executable file (/home/abhishek/dev/go/workspace/test_concurrency/bin/main) doesnt exist.
+
+!ENTRY com.googlecode.goclipse.core 4 101 2015-06-08 10:35:26.049
+!MESSAGE Executable file (/home/abhishek/dev/go/workspace/test_concurrency/bin/main) doesnt exist.
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-06-08 16:14:30.344
+!MESSAGE Unknown error line syntax: warning: "./..." matched no packages
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-06-08 16:14:44.100
+!MESSAGE Unknown error line syntax: warning: "./..." matched no packages
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-06-08 16:14:50.612
+!MESSAGE Unknown error line syntax: runtime.main_main: main.main: not defined
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-06-08 16:14:50.613
+!MESSAGE Unknown error line syntax: runtime.main_main: undefined: main.main
