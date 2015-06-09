@@ -1822,3 +1822,15 @@ Caused by: java.net.UnknownHostException: bjlinux068: unknown error
 
 !ENTRY com.googlecode.goclipse.core 4 0 2015-06-08 16:14:50.613
 !MESSAGE Unknown error line syntax: runtime.main_main: undefined: main.main
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-06-08 20:05:58.256
+!MESSAGE Unknown error line syntax: warning: "./..." matched no packages
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-06-08 20:06:05.348
+!MESSAGE Unknown error line syntax: warning: "./..." matched no packages
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-06-08 20:06:12.130
+!MESSAGE Unknown error line syntax: runtime.main_main: main.main: not defined
+
+!ENTRY com.googlecode.goclipse.core 4 0 2015-06-08 20:06:12.130
+!MESSAGE Unknown error line syntax: runtime.main_main: undefined: main.main
